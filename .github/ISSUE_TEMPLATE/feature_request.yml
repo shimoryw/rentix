@@ -1,0 +1,47 @@
+name: 💡 Идея / улучшение
+about: Предложить новую функцию или изменение Rentix
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Идеи по развитию Rentix приветствуются. Лучше всего описать не только функцию, но и какую проблему она решает.
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: К чему относится идея?
+      options:
+        - Аренды
+        - Мои ТС
+        - Статистика
+        - Семья
+        - Telegram / Mini App
+        - Rentix Desktop
+        - Уведомления
+        - Импорт
+        - Другое
+    validations:
+      required: true
+
+  - type: textarea
+    id: idea
+    attributes:
+      label: Что предлагаете добавить или изменить?
+      placeholder: Опишите идею своими словами.
+    validations:
+      required: true
+
+  - type: textarea
+    id: benefit
+    attributes:
+      label: Чем это будет полезно?
+      placeholder: Например: позволит быстрее видеть свободные ТС, сократит ручной учёт и т.д.
+    validations:
+      required: true
+
+  - type: textarea
+    id: example
+    attributes:
+      label: Пример / референс
+      description: При желании приложите скриншот, макет или ссылку на пример.
