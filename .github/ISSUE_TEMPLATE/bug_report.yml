@@ -1,0 +1,65 @@
+name: 🐞 Ошибка
+about: Сообщить о проблеме в Rentix
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Спасибо за сообщение. Чем точнее описание, тем быстрее получится воспроизвести проблему.
+
+  - type: dropdown
+    id: project
+    attributes:
+      label: Проект
+      options:
+        - GTA 5 RP
+        - Majestic RP
+        - Россия Онлайн
+        - Не связано с конкретным проектом
+    validations:
+      required: true
+
+  - type: dropdown
+    id: client
+    attributes:
+      label: Где возникла проблема?
+      options:
+        - Сайт rentixhub.ru
+        - Telegram Mini App
+        - Telegram-бот
+        - Rentix Desktop
+    validations:
+      required: true
+
+  - type: input
+    id: section
+    attributes:
+      label: Раздел
+      placeholder: Например: Аренды, Мои ТС, Статистика, Семья
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Что произошло?
+      placeholder: Опишите проблему и что ожидали увидеть вместо этого.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Как повторить?
+      placeholder: |
+        1. Открыл ...
+        2. Нажал ...
+        3. Появилось ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: Дополнительная информация
+      description: Можно приложить скриншоты, текст уведомления, версию Desktop или другие детали.
