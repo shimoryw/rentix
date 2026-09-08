@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 Связаться с разработчиком
+    url: https://t.me/shimoryw
+    about: Вопросы, которые не требуют публичного Issue.
+  - name: 📢 Новости Rentix
+    url: https://t.me/rentixgta
+    about: Новости проекта и обновления.
